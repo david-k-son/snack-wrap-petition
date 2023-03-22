@@ -5,48 +5,70 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snack Wrap Petition</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/661ac17a3d.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="nav">
-      <div>
-        <p>SNACK WRAP PETITION</p>
-      </div>
-      <div>
+      <p>SNACK WRAP PETITION</p>
+      <div class="nav-links">
         <div>History</div>
         <div>Discontinued</div>
         <div>Reasons</div>
         <div>Petition</div>
       </div>
     </section>
+    <section class="description">
+      <img src="./img/grilled-snack-wrap.jpg" alt="" srcset="" />
+      <div>
+        <h3>Grilled</h3>
+        <h3>Chicken Wrap</h3>
+        <h4>Calories: 181 Deliciousness</h4>
+        <p>
+          Succulent, authentic grilled chicken strips, topped with crisp
+          lettuce, all wrapped up in a toasted tortilla.
+        </p>
+        <p>Absolute perfection</p>
+      </div>
+    </section>
+    <i class="fa-solid fa-circle-arrow-down"></i>
     <section class="history">
       <div>
         <h2>History</h2>
-        <p>
-          The Snack Wrap was a menu item that was available at McDonald's in the
-          United States in 2006. It consists of 100% white meat chicken breast
-          (crispy or grilled), lettuce, shredded cheddar jack cheese, Monterey
-          Jack cheese, and sauce (ranch, honey mustard, or salsa roja), wrapped
-          in a soft flour tortilla.
-        </p>
-        <p>
-          This site is a homage to the Snack Wrap. The Snack Wrap was arguable
-          the best item that McDonald's has ever released and is missed and
-          adored by millions of people. If you agree, sign the petition at the
-          bottom of the page
-        </p>
       </div>
-      <div>
-        <img
-          src="./img/grilled-snack-wrap.jpg"
-          alt="McDonald's Grilled Chicken Snack Wrap"
-        />
+      <div class="history-info">
+        <div class="highlight-description">
+          <p>
+            The Snack Wrap was a menu item that was available at McDonald's in
+            the United States in 2006. It consists of 100% white meat chicken
+            breast (crispy or grilled), lettuce, shredded cheddar jack cheese,
+            Monterey Jack cheese, and sauce (ranch, honey mustard, or salsa
+            roja), wrapped in a soft flour tortilla.
+          </p>
+          <p>
+            This site is a homage to the Snack Wrap. The Snack Wrap was arguable
+            the best item that McDonald's has ever released and is missed and
+            adored by millions of people. If you agree, sign the petition at the
+            bottom of the page
+          </p>
+        </div>
       </div>
+      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
+
     <section class="discontinued">
       <h2>Why Was It Discontinued?</h2>
       <div>
-        <div>
+        <div class="discontinued-info">
           <p>
             The snack wrap was officially discontinued in 2016 because of
             underwhelming sales and its time consuming construction. Compared to
@@ -75,14 +97,13 @@
             https://www.bloomberg.com/features/2015-mcdonalds-franchises).
           </p>
         </div>
-        <div>
-          <img src="./img/drive-through.jpg" alt="" />
-        </div>
+        <img src="./img/drive-through.jpg" alt="" style="height: 300px" />
       </div>
+      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
     <section class="reasons">
       <h2>Bring Back the Snack Wrap</h2>
-      <div>
+      <div class="card-container">
         <div class="card">
           <div><img src="./img/nutrition.PNG" alt="" /></div>
           <div class="card-info">
@@ -99,12 +120,12 @@
           </div>
         </div>
         <div class="card">
-          <div><img src="./img/price.webp" alt="" /></div>
+          <img src="./img/price.webp" alt="" />
           <div class="card-info">
             <h3>PRICE</h3>
             <p>
               Not only was the Snack Wrap relatively healthy, it was affordable
-              as well. Back when it was sold in 2016, its price was $1.59.
+              as well. Back when it was sold in 2016, its price was $1.49.
               Adjusting for inflation, that comes up to around $2.09. Even
               rounding to $2.50, this item was very affordable and competitively
               priced.
@@ -112,12 +133,18 @@
           </div>
         </div>
         <div class="card">
-          <div>
+          <div class="video-container">
             <blockquote
               class="tiktok-embed"
               cite="https://www.tiktok.com/@s_johnson_voiceovers/video/7093675923555339566"
               data-video-id="7093675923555339566"
-              style="max-width: 605px; min-width: 325px"
+              style="
+                max-width: 605px;
+                min-width: 325px;
+                border-radius: 20px;
+                border: 5px #ffc72c;
+                height: 80%;
+              "
             >
               <section>
                 <a
@@ -159,7 +186,7 @@
             </blockquote>
             <script async src="https://www.tiktok.com/embed.js"></script>
           </div>
-          <div class="card-info">
+          <!-- <div class="card-info">
             <h3>POPULARITY</h3>
             <p>
               There have been many recent viral videos and articles related to
@@ -171,13 +198,33 @@
               href="https://www.tiktok.com/@s_johnson_voiceovers/video/7093675923555339566"
               >TikTok</a
             >
-          </div>
+          </div> -->
         </div>
       </div>
+      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
     <section class="petition">
       <div><img src="./img/petition.jpg" alt="" /></div>
-      <div><form action=""></form></div>
+      <div class="petition-form">
+        <h2>Petition</h2>
+        <form action="">
+          <label for="fname">First Name:</label>
+          <input type="text" name="fname" id="fname" />
+          <label for="lname">Last Name:</label>
+          <input type="text" name="lname" id="lname" />
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" />
+          <div class="checkbox">
+            <input type="checkbox" name="display" id="display" />
+            <label class="check" for="display"
+              >Display my name for this petition</label
+            >
+          </div>
+          <button type="submit">
+            <i class="fa-solid fa-signature"></i> Sign this petition
+          </button>
+        </form>
+      </div>
     </section>
   </body>
 </html>
