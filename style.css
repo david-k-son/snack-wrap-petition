@@ -4,6 +4,18 @@
   box-sizing: border-box;
   font-family: "Source Sans Pro", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+/* body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+body::-webkit-scrollbar-track {
+  background-color: #1e1e24;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #333;
+} */
 h2 {
   padding-bottom: 2rem;
   color: #da291c;
@@ -26,35 +38,53 @@ section {
 .highlight-description p {
   padding-bottom: 2rem;
 }
-.fa-circle-arrow-down {
-  text-align: center;
-  width: 100%;
-  font-size: 2rem;
-  margin: 2rem;
-  color: #da291c;
-  cursor: pointer;
+a {
+  text-decoration: none;
 }
 
+/* TOP NAV */
 .nav {
   display: flex;
   justify-content: space-between;
   padding: 2rem 10rem;
-  /* background-color: #ffc72c;
-  color: #da291c; */
   font-size: 1.5rem;
   color: #ffc72c;
   background-color: #333;
 }
-.nav div,
+.nav a,
 .nav p {
   font-family: "Yellowtail", cursive;
 }
 .nav-links {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
-.nav-links div {
+.nav-links a {
   padding: 0 1rem;
+  color: inherit;
+}
+
+/* SIDE NAV */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar-link {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+}
+.navbar-link img {
+  min-width: 5rem;
 }
 
 .description {
@@ -65,6 +95,8 @@ section {
 }
 .description img {
   margin-right: 5rem;
+  width: 100%;
+  height: auto;
 }
 .description h3 {
   font-size: 3.5rem;
@@ -93,20 +125,6 @@ section {
   flex-direction: column;
   justify-content: center;
 }
-/* .history-info div p {
-  padding-bottom: 2rem;
-  margin-right: 3rem;
-} */
-.history-img-container {
-  /* width: 500px;
-  border: 1px solid red; */
-  /* width: 1000px; */
-  /* width: 90%; */
-  /* width: 500px; */
-  /* flex: 1; */
-}
-.history-img-container img {
-}
 
 .discontinued {
   display: flex;
@@ -114,6 +132,12 @@ section {
   /* background-image: url("./img/drive-through-resize.png");
   background-position: center center;
   background-size: cover; */
+}
+.discontinued img {
+  width: 100%;
+  min-width: 50%;
+  height: 50%;
+  /* height: auto; */
 }
 .discontinued div {
   display: flex;
@@ -139,7 +163,7 @@ section {
 }
 .card {
   width: 31%;
-  height: 700px;
+  height: 750px;
   border: 1px solid #ffc72c;
   border-radius: 20px;
   padding: 1rem;
@@ -151,6 +175,7 @@ section {
 .card img {
   width: 100%;
   max-height: 90%;
+  border-radius: 5%;
 }
 .card p {
   font-size: 1rem;
@@ -170,12 +195,17 @@ section {
 .petition div {
   width: 100%;
 }
+.petition-img-container {
+  margin-top: 2rem;
+  border-radius: 50px;
+}
 .petition img {
   max-width: 100%;
   max-height: 100%;
+  border-radius: 3%;
 }
 .petition-form {
-  padding-left: 2rem;
+  margin-left: 2rem;
 }
 form {
   display: flex;
@@ -223,4 +253,37 @@ form button {
 }
 .fa-signature {
   padding-right: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .navbar {
+    right: 0;
+    width: 5rem;
+    height: 100vh;
+    margin-right: 3rem;
+  }
+  .navbar-link {
+    margin: 2rem;
+    padding: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(62, 67, 70, 1);
+  }
+  .navbar-link {
+    justify-content: center;
+    margin: 0.25rem;
+  }
+  .navbar-item {
+    width: 10%;
+  }
 }

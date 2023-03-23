@@ -18,16 +18,63 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section class="nav">
+    <nav class="navbar">
+      <ul class="navbar-nav">
+        <li class="navbar-item">
+          <a href="#nav" class="navbar-link">
+            <img
+              src="./img/grilled-snack-wrap-bg.png"
+              style="width: 150px"
+              alt=""
+            />
+            <span class="navbar-link-text"></span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#history" class="navbar-link">
+            <img src="./img/tortilla-removebg-preview.png" alt="" />
+            <span class="navbar-link-text"></span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#discontinued" class="navbar-link">
+            <img src="./img/chicken-removebg-preview.png" alt="" />
+            <span class="navbar-link-text"></span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#reasons" class="navbar-link">
+            <img
+              src="./img/lettuce-removebg-preview.png"
+              style="width: 150px"
+              alt=""
+            />
+            <span class="navbar-link-text"></span>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a href="#petition" class="navbar-link">
+            <img
+              src="./img/ketchup-removebg-preview.png"
+              style="width: 110px"
+              alt=""
+            />
+            <span class="navbar-link-text"></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <section id="nav" class="nav">
       <p>SNACK WRAP PETITION</p>
       <div class="nav-links">
-        <div>History</div>
-        <div>Discontinued</div>
-        <div>Reasons</div>
-        <div>Petition</div>
+        <a href="#history">History</a>
+        <a href="#discontinued">Discontinued</a>
+        <a href="#reasons">Reasons</a>
+        <a href="#petition">Petition</a>
       </div>
     </section>
-    <section class="description">
+
+    <section id="description" class="description">
       <img src="./img/grilled-snack-wrap.jpg" alt="" srcset="" />
       <div>
         <h3>Grilled</h3>
@@ -40,8 +87,7 @@
         <p>Absolute perfection</p>
       </div>
     </section>
-    <i class="fa-solid fa-circle-arrow-down"></i>
-    <section class="history">
+    <section id="history" class="history">
       <div>
         <h2>History</h2>
       </div>
@@ -62,10 +108,9 @@
           </p>
         </div>
       </div>
-      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
 
-    <section class="discontinued">
+    <section id="discontinued" class="discontinued">
       <h2>Why Was It Discontinued?</h2>
       <div>
         <div class="discontinued-info">
@@ -97,11 +142,10 @@
             https://www.bloomberg.com/features/2015-mcdonalds-franchises).
           </p>
         </div>
-        <img src="./img/drive-through.jpg" alt="" style="height: 300px" />
+        <img src="./img/drive-through.jpg" alt="" />
       </div>
-      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
-    <section class="reasons">
+    <section id="reasons" class="reasons">
       <h2>Bring Back the Snack Wrap</h2>
       <div class="card-container">
         <div class="card">
@@ -186,25 +230,13 @@
             </blockquote>
             <script async src="https://www.tiktok.com/embed.js"></script>
           </div>
-          <!-- <div class="card-info">
-            <h3>POPULARITY</h3>
-            <p>
-              There have been many recent viral videos and articles related to
-              the Snack Wrap. The Snack Wrap tag in TikTok has generated 50.3B
-              views. Here is one example of a popular video on TikTok. If you
-              search for it, you will find many similar videos.
-            </p>
-            <a
-              href="https://www.tiktok.com/@s_johnson_voiceovers/video/7093675923555339566"
-              >TikTok</a
-            >
-          </div> -->
         </div>
       </div>
-      <i class="fa-solid fa-circle-arrow-down"></i>
     </section>
-    <section class="petition">
-      <div><img src="./img/petition.jpg" alt="" /></div>
+    <section id="petition" class="petition">
+      <div class="petition-img-container">
+        <img src="./img/petition.jpg" alt="" />
+      </div>
       <div class="petition-form">
         <h2>Petition</h2>
         <form action="">
